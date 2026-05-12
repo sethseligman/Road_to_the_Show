@@ -1,0 +1,11 @@
+.DS_Store
+~$*.docx
+
+# Next.js app lives in web/ (set Vercel Root Directory to "web")
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+web/.env
+web/*.tsbuildinfo
+web/narrate-smoke-output.txt

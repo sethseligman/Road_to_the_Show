@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #171717;
+  --field-green-base: #4d7a5f;
+  --field-green-shade: #1a2e22;
+  --field-green-highlight: #6f9d7d;
+  --infield-tan-base: #e6d2ae;
+  --infield-tan-shade: #8f7350;
+  --infield-tan-mid: #d2b78a;
+  --rail-bg: rgba(12, 18, 16, 0.94);
+  --rail-border: rgba(255, 255, 255, 0.1);
+  --rail-text: #f4f4f5;
+  --rail-text-muted: #a1a1aa;
+  --accent-positive: #34d399;
+  --accent-negative: #fb7185;
+  --stakes-rivalry: #60a5fa;
+  --stakes-championship: #fbbf24;
+  --stakes-playoff: #fb923c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c0f0e;
+    --foreground: #ececec;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
